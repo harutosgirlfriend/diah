@@ -9,10 +9,11 @@
         *{  margin: none;
             padding: 0;
             border: 0;
-            color: rgb(245, 247, 248);
+            
             outline: none;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
+            color: rgb(245, 247, 248);
            
         }
         body{
@@ -73,7 +74,7 @@
         transition: all 0.5s ease-in-out;
     }
     
-    .menu li:hover{
+    .menu li:hover,.beranda{
         background: rgb(185, 153, 158);
     }
     .menu a{
@@ -103,7 +104,7 @@
         border-radius: 40px;
 
     }
-    
+    li{ text-decoration: none;}
     input{
         color: aliceblue;
         width: 470px;
@@ -167,56 +168,79 @@
     }
 
    .kotak{
-    
-    display: flex;
-    width: 1200px;
-    height: 600px;
-    padding-top: 150px;
-   } 
-   #aboutus{
-    
-    background-color: rgb(230, 161, 184);
-    padding-left: 8px;
-    border-radius: 10px;
-    width: 150px;
-    height: 80px;
-    display: flex;
-    margin: 50px;
-    margin-left: 300px;
+    height: 100vh;
+    width: 1200px;  
+    padding-right: 100px;
    
+   } 
+   .kotak a{
+    color: aliceblue;
    }
-   #aboutus:hover{
+
+   a{ text-decoration: none;
+       }
+  p{color: rgb(243, 241, 237);} 
+ .kotak h1{color: rgb(253, 248, 248);}
+ 
+  .border{
+   
+    margin-left: 800px;
+    padding-top: 0px;
     margin-top: 0;
-   }
-   #kritik:hover{
-    margin-top: 0;
-   }
-   #histori:hover{
-    margin-top: 0;
-   }
-   #kritik{
-    
-    background-color: rgb(230, 161, 184);
-    padding-left: 8px;
-    border-radius: 10px;
-    width: 150px;
-    height: 80px;
     display: flex;
-    margin: 50px;
-   }
-   #histori{
+    width: 600px;
+    padding-left: 7px;
+    text-align: center;
+    font-size: larger;
     
+  
+  }
+  #artikel{
+    margin-right: 10px;
+  }
+  #inovasi{
+    margin-right: 10px;
+  }
+  #histori{
+    margin-right: 10px;
+  }
+  #aboutus{
+    margin-right:10px;
+  }
+ #kritik{
+    margin-right:10px;
+ }
+
+  #artikel:hover{
+    width: 100px;
+    text-align: center;
     background-color: rgb(230, 161, 184);
-    padding-left: 20px;
     border-radius: 10px;
-    width: 200px;
-    height: 80px;
-    display: flex;
-    margin: 50px;
-   }
-   a{ text-decoration: none;}
-  p{color: rgb(70, 69, 67);} 
-  h1{color: rgb(58, 57, 57);}
+  }
+  #inovasi:hover{
+    width: 100px;
+    text-align: center;
+    background-color: rgb(230, 161, 184);
+    border-radius: 10px;
+  }
+  #kritik:hover{
+    width: 100px;
+    text-align: center;
+    background-color: rgb(230, 161, 184);
+    border-radius: 10px;
+  }
+  #aboutus:hover{
+    width: 100px;
+    text-align: center;
+    background-color: rgb(230, 161, 184);
+    border-radius: 10px;
+  }
+  #histori:hover{
+    width: 100px;
+    text-align: center;
+    background-color: rgb(230, 161, 184);
+    border-radius: 10px;
+  }
    </style>
     
 </head>
@@ -307,24 +331,34 @@
             </td>
             <td>
              <div class="kotak">
+                <div class="border">
+                 <div id="aboutus">
+                        <a href="aboutus.html#aboutus">about us</a> 
+                     
+                    </div>
+         
+                     <div id="kritik">
+                        <a href="aboutus.html#kritik">criticism</a> 
+                         
+                     </div>
+                     
+                     <div id="histori"><a href="aboutus.html#histori">our history</a></div> 
+                        
+         
+                        <div id="inovasi">
+                            <a href="aboutus.html#inovasi">inovasi</a>
+                         </div>
+                         <div id="artikel">
+                            <a href="aboutus.html#artikel">artikel</a>
+                         </div>
+                     
+                </div>
                 
-                <div id="aboutus">
-                    <a href="aboutus.html#aboutus"><h1>about us</h1></a> 
+                
+               
                  
-                 </div>
-     
-                 <div id="kritik">
-                    <a href="aboutus.html#kritik"><h1>criticism </h1></a> 
-                     
-                 </div>
-                 
-                 <div id="histori">
-                    <a href="aboutus.html#histori"><h1>our history</h1></a>
-     
-                     
-                 </div>
              </div>   
-            
+             
            
         </tr>
     </table>
